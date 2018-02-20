@@ -1,6 +1,7 @@
+#!/usr/bin/env python
 #Author: Yong Wang <yongw@usc.edu>
 #Copyright reserved
-#
+#https://github.com/uscwy/EE511Project2/blob/master/project2.py
 
 import numpy as np
 import networkx as nx
