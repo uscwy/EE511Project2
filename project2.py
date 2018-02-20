@@ -1,3 +1,7 @@
+#Author: Yong Wang <yongw@usc.edu>
+#Copyright reserved
+#
+
 import numpy as np
 import networkx as nx
 import matplotlib.pyplot as plt
@@ -60,7 +64,7 @@ def count_number_of_intervals(intervals):
     c = 0
     for i in range(0, len(intervals)):
         t = t + intervals[i]
-        if t <= 1.0:
+        if t < 1.0:
             c = c + 1
         else:
             count.append(c)
@@ -68,7 +72,7 @@ def count_number_of_intervals(intervals):
             c = 1
             while(t > 1):
                 t = t - 1
-                count.append(0)
+                count.append(0) #0 event occured
 
             
     return count
