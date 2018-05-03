@@ -6,11 +6,14 @@ EE 511 Simulation Methods for Stochastic Systems Project #2: Random Number Gener
 Note: you need a network/graph plotter e.g. networkx (python) and igraph (R)
 Given n=50 people in a social network. Suppose any given unordered pair of two people are
 connected at random and independently with probability p
+
  Generate and plot three network samples for each value of p in {0.02, 0.09, 0.12}.
 Briefly discuss the structure of these sample graphs.
+
  Count the number of connections each vertex or node on a sample graph from the
 previous question. This statistic is the degree of the vertex. Plot a histogram of the
 vertex degrees for each of your sample graphs.
+
  Vertex degree is supposedly binomially distributed for small network sizes.
 Generate a network with (n, p) = (100, 0.06) and plot a histogram of the vertex
 degrees. Does you histogram support the binomial distribution assumption?
@@ -20,6 +23,7 @@ degrees. Does you histogram support the binomial distribution assumption?
  Use the inverse CDF method to generate 1000 independent samples, Xi, of the exponential
 random variable with an average waiting time of 0.2 time units. Evaluate the quality of your
 RNG with goodness of fit tests.
+
  Each exponential random sample represents the waiting time until an event occurs. Implement a
 routine to count the number of exponentially-distributed time intervals that occur in 1 time unit.
 Generate such counts for 1000 separate unit time intervals. How are these counts distributed?
